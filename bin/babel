@@ -11,9 +11,10 @@ cd $CURR_FOLDER
 
 # Babel
 mkdir -p out
-babel -m umd index.js -o out/index.js
-babel -m umd src --out-dir out/src
-babel -m umd node_modules/chunk/src/chunk.js -o out/chunk.js
+node_modules/volo/bin/volo add -skipexists
+node_modules/babel/bin/babel/index.js -m umd index.js -o out/index.js
+node_modules/babel/bin/babel/index.js -m umd src --out-dir out/src
+node_modules/babel/bin/babel/index.js -m umd node_modules/chunk/src/chunk.js -o out/chunk.js
 cp node_modules/babel/polyfill.js out/browser-polyfill.js
 
 echo "                                "

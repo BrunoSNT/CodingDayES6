@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node_modules/mocha/bin/mocha --compilers js:babel/register --reporter spec",
     "main": "node_modules/babel/bin/babel-node index.js",
-    "postinstall": "node_modules/volo/bin/volo add -skipexists; bin/babel",
+    "babel": "./bin/babel",
     "start": " node_modules/http-server/bin/http-server out -o -a127.0.0.1 -p8183"
   },
   "author": "Vladimir Kucherenko <kvsoftware@gmail.com>",
