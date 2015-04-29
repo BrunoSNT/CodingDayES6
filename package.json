@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npm i -g volo babel",
     "postinstall": "volo add -skipexists; bin/babel",
-    "start": "node_modules/http-server/bin/http-server -o -a127.0.0.1 -p8183 -d out/.",
+    "start": " node_modules/http-server/bin/http-server out -oa127.0.0.1 -p8183",
     "main": "babel-node index.js"
   },
   "author": "Vladimir Kucherenko <kvsoftware@gmail.com>",
