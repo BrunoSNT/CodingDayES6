@@ -3,7 +3,7 @@
 
 #### 1. Install
 ```shell
-git clone https://github.com/VFK/GameOfLife-ES6.git
+git clone https://github.com/lagden/GameOfLife-ES6.git
 cd GameOfLife-ES6
 npm i
 ```
