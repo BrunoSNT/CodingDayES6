@@ -1,7 +1,7 @@
 'use strict';
 
 import Board from './board';
-import chunk from 'chunk';
+import {chunk} from 'chunk';
 
 class Game {
     constructor(width, height) {

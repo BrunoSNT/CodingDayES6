@@ -4,8 +4,9 @@
   "description": "Conway's Game of Life written in ECMAScript 6",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register --reporter spec",
-    "main": "babel-node index.js"
+    "preinstall": "npm i -g volo babel",
+    "postinstall": "volo add -skipexists; bin/babel",
+    "start": "node_modules/http-server/bin/http-server -o -a127.0.0.1 -p8183 -d out/."
   },
   "author": "Vladimir Kucherenko <kvsoftware@gmail.com>",
   "engines": {
@@ -20,7 +21,14 @@
   },
   "devDependencies": {
     "babel": "^4.0.1",
+    "http-server": "^0.8.0",
     "mocha": "^2.1.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "volo": {
+    "baseUrl": "out/",
+    "dependencies": {
+      "require": "github:jrburke/requirejs/2.1.17"
+    }
+  }
 }
