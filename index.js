@@ -1,6 +1,6 @@
 'use strict';
 
-import Game  from './src/game';
+import Game from './src/game';
 
 let game = new Game(40, 20);
 

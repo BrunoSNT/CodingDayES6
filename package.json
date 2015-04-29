@@ -4,10 +4,10 @@
   "description": "Conway's Game of Life written in ECMAScript 6",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --compilers js:babel/register --reporter spec",
-    "main": "node_modules/babel/bin/babel-node index.js",
+    "test": "mocha --compilers js:babel/register --reporter spec",
+    "main": "babel-node index.js",
     "babel": "./bin/babel",
-    "start": " node_modules/http-server/bin/http-server out -o -a127.0.0.1 -p8183"
+    "start": "http-server out -o -a127.0.0.1 -p8183"
   },
   "author": "Vladimir Kucherenko <kvsoftware@gmail.com>",
   "engines": {
