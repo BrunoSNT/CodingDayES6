@@ -22,9 +22,10 @@
     "chunk": "0.0.2"
   },
   "devDependencies": {
-    "babel": "^4.0.1",
+    "babel": "^5.1.13",
     "http-server": "^0.8.0",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "volo": "^0.3.6"
   },
   "license": "MIT",
   "volo": {
