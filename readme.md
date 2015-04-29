@@ -3,18 +3,18 @@
 
 #### 1. Install
 ```shell
-git clone https://github.com/lagden/GameOfLife-ES6.git
+git clone https://github.com/VFK/GameOfLife-ES6.git
 cd GameOfLife-ES6
 npm i
 ```
 
 #### 2. Run
-If the future is finally here (if ECMAScript 6 is fully supported now):
+If the future is finally here (if ECMAScript 6 is fully supported now):  
 ```shell
 node index.js
 ```
 
-If there are still no flying cars and hover boards (use [Babel](http://babeljs.io) runner):
+If there are still no flying cars and hover boards (use [Babel](http://babeljs.io) runner):  
 ```shell
 npm run main
 ```
