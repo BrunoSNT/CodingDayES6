@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register --reporter spec",
-    "main": "babel-node index.js"
+    "main": "babel-node index.js",
+    "babel": "./bin/babel",
+    "start": "http-server out -o -a127.0.0.1 -p8183"
   },
   "author": "Vladimir Kucherenko <kvsoftware@gmail.com>",
   "engines": {
@@ -19,8 +21,16 @@
     "chunk": "0.0.2"
   },
   "devDependencies": {
-    "babel": "^4.0.1",
-    "mocha": "^2.1.0"
+    "babel": "^5.1.13",
+    "http-server": "^0.8.0",
+    "mocha": "^2.1.0",
+    "volo": "^0.3.6"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "volo": {
+    "baseUrl": "out/",
+    "dependencies": {
+      "require": "github:jrburke/requirejs/2.1.17"
+    }
+  }
 }
