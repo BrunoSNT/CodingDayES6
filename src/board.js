@@ -30,20 +30,7 @@ class Board {
 
     /** @param {Cell} cell */
     getNeighbours(cell) {
-        let items = [
-            this.cells.find(toFind => toFind.x === cell.x - 1 && toFind.y === cell.y + 1),
-            this.cells.find(toFind => toFind.x === cell.x && toFind.y === cell.y + 1),
-            this.cells.find(toFind => toFind.x === cell.x + 1 && toFind.y === cell.y + 1),
-
-            this.cells.find(toFind => toFind.x === cell.x - 1 && toFind.y === cell.y),
-            this.cells.find(toFind => toFind.x === cell.x + 1 && toFind.y === cell.y),
-
-            this.cells.find(toFind => toFind.x === cell.x - 1 && toFind.y === cell.y - 1),
-            this.cells.find(toFind => toFind.x === cell.x && toFind.y === cell.y - 1),
-            this.cells.find(toFind => toFind.x === cell.x + 1 && toFind.y === cell.y - 1)
-        ];
-
-        return items.filter(item => item);
+        // return items.filter(item => item);
     }
 
 }

@@ -1,7 +1,7 @@
 {
   "name": "GameOfLife-ES6",
   "version": "1.0.0",
-  "description": "Conway's Game of Life written in ECMAScript 6",
+  "description": "CodingDay -Conway's Game of Life written in ECMAScript 6",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register --reporter spec",
@@ -26,11 +26,11 @@
     "mocha": "^2.1.0",
     "volo": "^0.3.6"
   },
-  "license": "MIT",
   "volo": {
     "baseUrl": "out/",
     "dependencies": {
       "require": "github:jrburke/requirejs/2.1.17"
     }
-  }
+  },
+  "license": "MIT"
 }

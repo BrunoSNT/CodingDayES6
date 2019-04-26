@@ -11,26 +11,8 @@ class Game {
         this.board = new Board(width, height);
     }
 
-    step() {
-        let oldCells = this.board.cells.map(cell => Object.assign({}, cell));
-
-        this.board.cells = oldCells.map(cell => {
-            let neighbours = this.board.getNeighbours(cell);
-
-            let alive = neighbours.filter(neighbour => neighbour.alive);
-
-            if (cell.alive) {
-                if (alive.length < 2 || alive.length > 3) {
-                    cell.alive = false;
-                }
-            } else {
-                if (alive.length === 3) {
-                    cell.alive = true;
-                }
-            }
-
-            return cell;
-        });
+    step() {  // cada rodada do jogo
+            //return cell;
     }
 
     render(aliveChar = '#', deadChar = '_', newLineChar = '\n') {
